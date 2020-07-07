@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face { font-family: Backstranger; src: url('backstranger/Backstranger.otf'); }
+        @font-face { font-family: Bebas; src: url('fonts/bebas/Bebas-Regular.ttf'); }
+        @font-face { font-family: Roboto; src: url('fonts/roboto/Roboto-Black.ttf'); }
+        
+        html{
+            font-family:Roboto;
+        }
+        body{
+            background-image: url("images/bg.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        h2{
+            text-align:center;
+            margin:0px;
+            color:#fff;
+        }
+        .h_line{
+            margin-bottom:25px;
+        }
+        .main_div{
+            border-radius:8px;
+            width:300px;
+            padding:20px;
+            background-color:#eb347d50;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .field_div{
+            margin-bottom:20px;
+        }
+        .block{
+            color:#fff;
+            /* font-weight:900; */
+            display:inline-block;
+            text-align:left;
+            width:90px;
+        }
+        .btn1{
+            margin-top:10px;
+            font-family:Roboto;
+            border-radius:5px;
+            padding:5px 8px 5px 8px;
+            float:right;
+            border: 2px solid #eb347d80;
+            background-color: #fff;
+            color:#eb347d;
+            cursor: pointer;
+        }
+        .btn2{
+            margin-top:10px;
+            font-family:Roboto;
+            border-radius:5px;
+            padding:5px 8px 5px 8px;
+            border: 2px solid #eb347d80;
+            color:#eb347d;
+            background-color: #ffffff;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 990px)  {
+            body{
+                background-image: url("images/bg.jpg");
+                background-size:auto;
+            }
+        }
+        /* @media screen and (min-width: 990px)  {
+            body{
+                background-image: url("images/bg.jpg");
+                background-size:100%;
+            }
+        } */
+        @media screen and (min-device-width: 320px) and (max-width: 380px){
+            .main_div{
+                width:250px;
+            }
+        }
+        @media screen and (min-device-width: 990px) and (max-width: 2100px){
+            body{
+                background-image: url("images/bg.jpg");
+                background-size:auto;
+            }
+        }
+        @media screen and (max-width: 320px){
+            .main_div{
+            width:200px;
+        }
+        }
+        @media screen and (min-device-width: 990px) and (max-device-width: 2110px)  {
+        body{
+            background-image: url("images/bg.jpg");
+            background-size:auto;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <form>
+            <h2>LOGIN</h2>
+            <hr class="h_line">
+            <div class="field_div">
+                <label class="block" for="uname">User Name: </label>
+                <input type="text" name="uname" id="uname" required>
+            </div>
+            <div class="field_div">
+                <label class="block" for="password">Password: </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <button class="btn1" name="submit">Submit</button>
+            <button class="btn2" name="register">Register</button>
+        </form>
+    </div>
+</body>
+</html>
