@@ -1,27 +1,782 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link href="res/css/style.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-    <div class="main_div">
-        <form>
-            <h2>LOGIN</h2>
-            <hr class="h_line">
-            <div class="field_div">
-                <label class="block" for="uname">User Name: </label>
-                <input type="text" name="uname" id="uname" required>
-            </div>
-            <div class="field_div">
-                <label class="block" for="password">Password: </label>
-                <input type="password" name="password" id="password" required>
-            </div>
-            <button class="btn1" name="submit">Submit</button>
-            <button class="btn2" name="register">Register</button>
-        </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owl-Carousel</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Monoton"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.13.0/css/all.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- <div class="owl-carousel">
+      <div>Your Content-1</div>
+      <div>Your Content-2</div>
+      <div>Your Content-3</div>
+      <div>Your Content-4</div>
+      <div>Your Content-5</div>
+      <div>Your Content-6</div>
+      <div>Your Content-7</div>
+      <div>Your Content-8</div>
+      <div>Your Content-9</div>
+      <div>Your Content-10</div>
+      <div>Your Content-11</div>
+      <div>Your Content-12</div>
+      <div>Your Content-13</div>
+      <div>Your Content-14</div>
+    </div> -->
+
+    <div id="mobile-menu-open" class="shadow-large">
+      <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-</body>
+    <header>
+      <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul id="menu" class="shadow">
+        <li>
+          <a href="#about-me">About</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#opensource">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+
+    <div id="particles-js"></div>
+    <div class="my-name">
+      <h1>
+        Aakash Brahmbhatt
+      </h1>
+      <h2>Software Engineer</h2>
+      <a href="#" class="btn-rounded-white">Download Resume</a>
+    </div>
+
+    <div id="lead-down">
+      <span>
+        <a href="#about-me">
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+      </span>
+    </div>
+    <!----------------------------------------------- about-section ---------------------------------------------->
+    <div
+      class="react-reveal greet-main"
+      id="about-me"
+      style="
+        animation-fill-mode: both;
+        animation-duration: 1000ms;
+        animation-delay: 0ms;
+        animation-iteration-count: 1;
+        opacity: 1;
+        animation-name: react-reveal-695348592371686-1;
+      "
+    >
+      <div class="greeting-main">
+        <div class="greeting-text-div">
+          <div>
+            <h1 class="greeting-text">
+              Hi all, I'm Aakash
+              <span class="wave-emoji"
+                ><img
+                  alt="👋"
+                  draggable="false"
+                  src="https://twemoji.maxcdn.com/2/72x72/1f44b.png"
+                  style="
+                    height: 1em;
+                    width: 1em;
+                    margin: 0px 0.05em 0px 0.1em;
+                    vertical-align: -0.1em;
+                  "
+              /></span>
+            </h1>
+            <p class="greeting-text-p subTitle">
+              A passionate Developer
+              <img
+                alt="🚀"
+                draggable="false"
+                src="https://twemoji.maxcdn.com/2/72x72/1f680.png"
+                style="
+                  height: 1em;
+                  width: 1em;
+                  margin: 0px 0.05em 0px 0.1em;
+                  vertical-align: -0.1em;
+                "
+              />
+              having an experience of building Web and Mobile applications with
+              JavaScript / Php / React Native and some other cool libraries and
+              frameworks, eCommerce based on wooCommerce and Shopify, chatbot
+              using Microsoft bot framework.
+            </p>
+            <div class="social-media-div">
+              <a href="#" class="icon-button github" target="_blank"
+                ><i class="fab fa-github"></i><span></span></a
+              ><a href="#" class="icon-button linkedin" target="_blank"
+                ><i class="fab fa-linkedin-in"></i><span></span></a
+              ><a
+                href="mailto:aakashbrahmbhatt31@gmail.com"
+                class="icon-button google"
+                target="_blank"
+                ><i class="fab fa-google"></i><span></span
+              ></a>
+              <!-- <a
+                href="#"
+                class="icon-button gitlab"
+                target="_blank"
+                ><i class="fab fa-gitlab"></i><span></span></a
+              > -->
+              <a href="#" class="icon-button facebook" target="_blank"
+                ><i class="fab fa-facebook-f"></i><span></span
+              ></a>
+            </div>
+            <div class="button-greeting-div">
+              <div>
+                <a
+                  class="main-button"
+                  href="mailto:aakashbrahmbhatt31@gmail.com"
+                  >Contact me</a
+                >
+              </div>
+              <!-- <div>
+                <a
+                  class="main-button"
+                  href="https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
+                  target="_blank"
+                  >See my resume</a
+                >
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <!-- <div class="greeting-image-div">
+          <img
+            alt="saad sitting on table"
+            src="/static/media/manOnTable.52be3144.svg"
+          />
+        </div> -->
+      </div>
+    </div>
+
+    <!-----------------------------what-I-do section----------------------------->
+    <section id="skills">
+      <div
+        class="react-reveal greet-main"
+        id="greeting"
+        style="
+          animation-fill-mode: both;
+          animation-duration: 1000ms;
+          animation-delay: 0ms;
+          animation-iteration-count: 1;
+          opacity: 1;
+          animation-name: react-reveal-695348592371686-1;
+        "
+      >
+        <div class="greeting-main">
+          <div class="greeting-text-div">
+            <div>
+              <h1 class="greeting-text whatIdo-text">
+                What I do
+                <!-- <span class="wave-emoji"
+                  ><img
+                    alt="👋"
+                    draggable="false"
+                    src="https://twemoji.maxcdn.com/2/72x72/1f44b.png"
+                    style="
+                      height: 1em;
+                      width: 1em;
+                      margin: 0px 0.05em 0px 0.1em;
+                      vertical-align: -0.1em;
+                    "
+                /></span> -->
+              </h1>
+
+              <div class="what-I-do-points">
+                <p class="subTitle skills-text">
+                  <img
+                    alt="⚡"
+                    draggable="false"
+                    src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                    style="
+                      height: 1em;
+                      width: 1em;
+                      margin: 0px 0.05em 0px 0.1em;
+                      vertical-align: -0.1em;
+                    "
+                  />
+                  Develop highly interactive and responsive Front end / User
+                  Interfaces for your web and mobile applications
+                </p>
+                <p class="subTitle skills-text">
+                  <img
+                    alt="⚡"
+                    draggable="false"
+                    src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                    style="
+                      height: 1em;
+                      width: 1em;
+                      margin: 0px 0.05em 0px 0.1em;
+                      vertical-align: -0.1em;
+                    "
+                  />
+                  eCommerce solution for any type of store
+                </p>
+                <p class="subTitle skills-text">
+                  <img
+                    alt="⚡"
+                    draggable="false"
+                    src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                    style="
+                      height: 1em;
+                      width: 1em;
+                      margin: 0px 0.05em 0px 0.1em;
+                      vertical-align: -0.1em;
+                    "
+                  />
+                  Integration of third party services such as Firebase/ Chatbots
+                </p>
+              </div>
+
+              <div>
+                <div class="software-skills-main-div">
+                  <ul class="dev-icons">
+                    <li class="software-skill-inline" name="html-5">
+                      <i class="fab fa-html5"></i>
+                      <p>html-5</p>
+                    </li>
+                    <li class="software-skill-inline" name="css3">
+                      <i class="fab fa-css3-alt"></i>
+                      <p>css3</p>
+                    </li>
+                    <li class="software-skill-inline" name="sass">
+                      <i class="fab fa-sass"></i>
+                      <p>sass</p>
+                    </li>
+                    <li class="software-skill-inline" name="JavaScript">
+                      <i class="fab fa-js"></i>
+                      <p>JavaScript</p>
+                    </li>
+                    <li class="software-skill-inline" name="reactjs">
+                      <i class="fab fa-react"></i>
+                      <p>reactjs</p>
+                    </li>
+                    <li class="software-skill-inline" name="nodejs">
+                      <i class="fab fa-node"></i>
+                      <p>nodejs</p>
+                    </li>
+                    <li class="software-skill-inline" name="swift">
+                      <i class="fab fa-swift"></i>
+                      <p>swift</p>
+                    </li>
+                    <li class="software-skill-inline" name="npm">
+                      <i class="fab fa-npm"></i>
+                      <p>npm</p>
+                    </li>
+                    <li class="software-skill-inline" name="sql-database">
+                      <i class="fas fa-database"></i>
+                      <p>sql-database</p>
+                    </li>
+                    <li class="software-skill-inline" name="aws">
+                      <i class="fab fa-aws"></i>
+                      <p>aws</p>
+                    </li>
+                    <li class="software-skill-inline" name="firebase">
+                      <i class="fas fa-fire"></i>
+                      <p>firebase</p>
+                    </li>
+                    <li class="software-skill-inline" name="python">
+                      <i class="fab fa-python"></i>
+                      <p>python</p>
+                    </li>
+                    <li class="software-skill-inline" name="docker">
+                      <i class="fab fa-docker"></i>
+                      <p>docker</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="greeting-image-div">
+        <img
+          alt="saad sitting on table"
+          src="/static/media/manOnTable.52be3144.svg"
+        />
+      </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------Experience section------------------------------------->
+    <section id="experience">
+      <div
+        class="react-reveal greet-main"
+        id="greeting"
+        style="
+          animation-fill-mode: both;
+          animation-duration: 1000ms;
+          animation-delay: 0ms;
+          animation-iteration-count: 1;
+          opacity: 1;
+          animation-name: react-reveal-695348592371686-1;
+        "
+      >
+        <div class="greeting-main">
+          <div class="greeting-text-div">
+            <div>
+              <h1 class="greeting-text whatIdo-text">
+                Experiences
+                <!-- <span class="wave-emoji"
+                  ><img
+                    alt="👋"
+                    draggable="false"
+                    src="https://twemoji.maxcdn.com/2/72x72/1f44b.png"
+                    style="
+                      height: 1em;
+                      width: 1em;
+                      margin: 0px 0.05em 0px 0.1em;
+                      vertical-align: -0.1em;
+                    "
+                /></span> -->
+              </h1>
+
+              <div class="what-I-do-points">
+                <p class="subTitle skills-text">
+                  <img
+                    alt="⚡"
+                    draggable="false"
+                    src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                    style="
+                      height: 1em;
+                      width: 1em;
+                      margin: 0px 0.05em 0px 0.1em;
+                      vertical-align: -0.1em;
+                    "
+                  />
+                  Responsive web development
+                </p>
+                <p class="subTitle skills-text">
+                  <img
+                    alt="⚡"
+                    draggable="false"
+                    src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                    style="
+                      height: 1em;
+                      width: 1em;
+                      margin: 0px 0.05em 0px 0.1em;
+                      vertical-align: -0.1em;
+                    "
+                  />
+                  eCommerce - wooCommerce
+                </p>
+                <p class="subTitle skills-text">
+                  <img
+                    alt="⚡"
+                    draggable="false"
+                    src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                    style="
+                      height: 1em;
+                      width: 1em;
+                      margin: 0px 0.05em 0px 0.1em;
+                      vertical-align: -0.1em;
+                    "
+                  />
+                  eCommerce - Shopify
+                </p>
+
+                <p class="subTitle skills-text">
+                  <img
+                    alt="⚡"
+                    draggable="false"
+                    src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                    style="
+                      height: 1em;
+                      width: 1em;
+                      margin: 0px 0.05em 0px 0.1em;
+                      vertical-align: -0.1em;
+                    "
+                  />
+                  Chatbots development and integration
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="greeting-image-div">
+        <img
+          alt="saad sitting on table"
+          src="/static/media/manOnTable.52be3144.svg"
+        />
+      </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------------Education Section------------------------------------>
+    <section id="education">
+      <div
+        class="react-reveal greet-main"
+        id="greeting"
+        style="
+          animation-fill-mode: both;
+          animation-duration: 1000ms;
+          animation-delay: 0ms;
+          animation-iteration-count: 1;
+          opacity: 1;
+          animation-name: react-reveal-695348592371686-1;
+        "
+      >
+        <div class="greeting-main">
+          <div class="greeting-text-div">
+            <div>
+              <h1 class="greeting-text whatIdo-text">
+                Education
+                <!-- <span class="wave-emoji"
+                  ><img
+                    alt="👋"
+                    draggable="false"
+                    src="https://twemoji.maxcdn.com/2/72x72/1f44b.png"
+                    style="
+                      height: 1em;
+                      width: 1em;
+                      margin: 0px 0.05em 0px 0.1em;
+                      vertical-align: -0.1em;
+                    "
+                /></span> -->
+              </h1>
+
+              <div class="what-I-do-points">
+                <p class="subTitle skills-text">
+                  <img
+                    alt="⚡"
+                    draggable="false"
+                    src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                    style="
+                      height: 1em;
+                      width: 1em;
+                      margin: 0px 0.05em 0px 0.1em;
+                      vertical-align: -0.1em;
+                    "
+                  />
+                  Bachelor Of Engineering - Information Technology from GTU,
+                  India
+                </p>
+                <p class="subTitle skills-text">
+                  <img
+                    alt="⚡"
+                    draggable="false"
+                    src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                    style="
+                      height: 1em;
+                      width: 1em;
+                      margin: 0px 0.05em 0px 0.1em;
+                      vertical-align: -0.1em;
+                    "
+                  />
+                  12th Grad from GSEB, India
+                </p>
+                <p class="subTitle skills-text">
+                  <img
+                    alt="⚡"
+                    draggable="false"
+                    src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                    style="
+                      height: 1em;
+                      width: 1em;
+                      margin: 0px 0.05em 0px 0.1em;
+                      vertical-align: -0.1em;
+                    "
+                  />
+                  10th Grad from GSEB, India
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="greeting-image-div">
+        <img
+          alt="saad sitting on table"
+          src="/static/media/manOnTable.52be3144.svg"
+        />
+      </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------Project Section----------------------------------->
+    <div class="greet-main" id="opensource">
+      <h1 class="project-title" style="text-align: center;">
+        Open Source Projects
+      </h1>
+      <div class="repo-cards-div-main">
+        <div
+          class="react-reveal"
+          style="
+            animation-fill-mode: both;
+            animation-duration: 1000ms;
+            animation-delay: 0ms;
+            animation-iteration-count: 1;
+            opacity: 1;
+            animation-name: react-reveal-246658333071510-4;
+          "
+        >
+          <div class="repo-card-div">
+            <div class="repo-name-div">
+              <svg
+                aria-hidden="true"
+                class="repo-svg"
+                height="20"
+                role="img"
+                viewBox="0 0 12 16"
+                width="14"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+                ></path>
+              </svg>
+              <p class="repo-name">akash-2020</p>
+            </div>
+            <p class="repo-description">
+              🚀 Software Developer Portfolio Template that helps you showcase
+              your work and skills as a software developer.
+            </p>
+            <div class="repo-stats">
+              <div class="repo-left-stat">
+                <span
+                  ><div
+                    class="language-color"
+                    style="background-color: rgb(241, 224, 90);"
+                  ></div>
+                  <p>JavaScript</p></span
+                ><span
+                  ><svg
+                    aria-hidden="true"
+                    class="repo-star-svg"
+                    height="20"
+                    role="img"
+                    viewBox="0 0 10 16"
+                    width="12"
+                    fill="rgb(106, 115, 125)"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+                    ></path>
+                  </svg>
+                  <p>0</p></span
+                ><span
+                  ><svg
+                    aria-hidden="true"
+                    class="repo-star-svg"
+                    height="20"
+                    role="img"
+                    viewBox="0 0 14 16"
+                    width="14"
+                    fill="rgb(106, 115, 125)"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"
+                    ></path>
+                  </svg>
+                  <p>0</p></span
+                >
+              </div>
+              <div class="repo-right-stat"><p>100 KB</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------------Contact Section----------------------------------->
+    <section id="contact">
+      <div
+        class="react-reveal greet-main"
+        id="contact"
+        style="
+          animation-fill-mode: both;
+          animation-duration: 1000ms;
+          animation-delay: 0ms;
+          animation-iteration-count: 1;
+          opacity: 1;
+          animation-name: react-reveal-246658333071510-4;
+        "
+      >
+        <h1 class="prof-title whatIdo-text">Reach Out to me!</h1>
+        <div class="row">
+          <div class="main-content-profile">
+            <div class="blog-header">
+              <p class="subTitle blog-subtitle">
+                Discuss a project or just want to say hi? My Inbox is open for
+                all.
+              </p>
+            </div>
+            <h2 class="bio-text">
+              "मेरा भारत महान
+              <img
+                alt="IND"
+                draggable="false"
+                src="https://twemoji.maxcdn.com/v/13.0.1/72x72/1f1ee-1f1f3.png"
+                style="
+                  height: 1em;
+                  width: 1em;
+                  margin: 0px 0.05em 0px 0.1em;
+                  vertical-align: -0.1em;
+                "
+              />
+              | Aspiring Software Developer
+              <img
+                alt="👾"
+                draggable="false"
+                src="https://twemoji.maxcdn.com/2/72x72/1f47e.png"
+                style="
+                  height: 1em;
+                  width: 1em;
+                  margin: 0px 0.05em 0px 0.1em;
+                  vertical-align: -0.1em;
+                "
+              />
+              | Open Source Contributor
+              <img
+                alt="🔥"
+                draggable="false"
+                src="https://twemoji.maxcdn.com/2/72x72/1f525.png"
+                style="
+                  height: 1em;
+                  width: 1em;
+                  margin: 0px 0.05em 0px 0.1em;
+                  vertical-align: -0.1em;
+                "
+              />
+              "
+            </h2>
+            <div class="location-div">
+              <span class="desc-prof"
+                ><svg
+                  viewBox="0 0 12 16"
+                  version="1.1"
+                  width="20"
+                  height="18"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"
+                  ></path></svg
+                >Gujarat, India</span
+              >
+            </div>
+            <div class="opp-div">
+              <span class="desc-prof">Open for opportunities: Yes</span>
+            </div>
+
+            <div class="social-media-div">
+              <a href="#" class="icon-button github" target="_blank"
+                ><i class="fab fa-github"></i><span></span></a
+              ><a href="#" class="icon-button linkedin" target="_blank"
+                ><i class="fab fa-linkedin-in"></i><span></span></a
+              ><a
+                href="mailto:aakashbrahmbhatt31@gmail.com"
+                class="icon-button google"
+                target="_blank"
+                ><i class="fab fa-google"></i><span></span
+              ></a>
+              <!-- <a
+              href="#"
+              class="icon-button gitlab"
+              target="_blank"
+              ><i class="fab fa-gitlab"></i><span></span></a
+            > -->
+              <a href="#" class="icon-button facebook" target="_blank"
+                ><i class="fab fa-facebook-f"></i><span></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="go-up" id="lead-up">
+        <span>
+          <a href="#about-me">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </a>
+        </span>
+      </div> -->
+    </section>
+
+    <!----------------------------------------Socket-------------------------------------------->
+    <div
+      class="react-reveal footer-div"
+      style="
+        animation-fill-mode: both;
+        animation-duration: 1000ms;
+        animation-delay: 0ms;
+        animation-iteration-count: 1;
+        opacity: 1;
+        animation-name: react-reveal-246658333071510-5;
+      "
+    >
+      <p class="footer-text">
+        Made with
+        <img
+          alt="❤️"
+          draggable="false"
+          src="https://twemoji.maxcdn.com/2/72x72/2764.png"
+          style="
+            height: 1em;
+            width: 1em;
+            margin: 0px 0.05em 0px 0.1em;
+            vertical-align: -0.1em;
+          "
+        />
+        by Aakash Brahmbhatt
+      </p>
+    </div>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+  </body>
 </html>
