@@ -1,8 +1,2 @@
 # Developer Portfolio Template
-
-by using
-
-particle.js
-bootstrap
-html
-css
+complete description will be posted shortly.
