@@ -1,7 +1,8 @@
-# This is responsive login page
+# Developer Portfolio Template
 
-images are in res>images>
+by using
 
-fonts lies in res>fonts>
-
-res>css> folder contains css files
+particle.js
+bootstrap
+html
+css
