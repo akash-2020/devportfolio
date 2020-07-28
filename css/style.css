@@ -92,6 +92,19 @@ header a:focus {
   color: #3498db;
   text-decoration: none;
 }
+#mobile-menu-open {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  right: 15px;
+  top: 10px;
+  color: #3498db;
+  font-size: 1.5em;
+  z-index: 20;
+  padding: 0 7px;
+  border-radius: 4px;
+  background: #fff;
+}
 /******************************************my-name div css***************************************/
 #particles-js {
   height: 100vh;
@@ -554,10 +567,79 @@ header a:focus {
   background-color: #45a7d8;
   padding: 10px;
 }
-/* -- responsive -- */
+/* ----------------------------------------- responsive -------------------------------------------- */
 /* Mobile first queries */
 /* Larger than mobile */
-@media (min-width: 400px) {
+@media screen and (max-width: 400px) {
+  /* #mobile-menu-open,
+  #mobile-menu-close {
+    display: block;
+  } */
+  #menu {
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+  /* #menu li {
+    display: block;
+    margin-bottom: 10px;
+  } */
+  .my-name h1 {
+    font-size: 2em;
+  }
+  .my-name h2 {
+    font-size: 1.25em;
+  }
+  .btn-rounded-white {
+    padding: 10px 17px;
+  }
+  .greet-main {
+    width: 85%;
+  }
+  .greeting-text {
+    font-size: 2em;
+  }
+
+  .greeting-text-p {
+    font-size: 1.25em;
+  }
+  .software-skill-inline {
+    padding: 6px 10px;
+  }
+  .software-skill-inline > i {
+    font-size: 1em;
+  }
+  .whatIdo-text {
+    margin-top: 25px !important;
+  }
+  .greeting-main > * {
+    margin-bottom: 0px;
+  }
+  .repo-cards-div-main {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .repo-name {
+    font-size: 1.25em;
+  }
+  #opensource {
+    margin-bottom: 36px;
+  }
+  .project-title {
+    font-size: 2em;
+  }
+  .prof-title {
+    font-size: 2em;
+  }
+  #contact .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .subTitle,
+  .bio-text {
+    font-size: 1.25em;
+  }
 }
 /* Larger than phablet */
 @media (min-width: 550px) {
