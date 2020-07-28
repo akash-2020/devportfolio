@@ -221,7 +221,7 @@ header a:focus {
 }
 
 .greeting-text {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1.1;
 }
 
@@ -390,7 +390,7 @@ header a:focus {
 }
 .subTitle {
   color: #868e96;
-  font-size: 25px;
+  font-size: 22px;
   text-align: justify;
 }
 .what-I-do-points {
@@ -413,7 +413,7 @@ header a:focus {
   padding: 20px 10px;
 }
 .project-title {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 400;
   line-height: normal;
 }
@@ -520,7 +520,7 @@ header a:focus {
 }
 .prof-title {
   margin: 0;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 400;
   text-align: center;
 }
