@@ -299,7 +299,7 @@ header a:focus {
 .social-media-div {
   font-size: 2em;
 }
-.facebook i:hover,
+.instagram i:hover,
 .github i:hover,
 .gitlab i:hover,
 .google i:hover,
@@ -326,11 +326,18 @@ header a:focus {
 /* .gitlab i {
   background-color: #fca326;
 } */
-.facebook {
+.instagram {
   margin-left: -6px;
 }
-.facebook i {
-  background-color: #3b5998;
+.instagram i {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
 }
 .icon-button i {
   color: #fff;
