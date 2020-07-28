@@ -582,6 +582,12 @@ header a:focus {
   #mobile-menu-close {
     display: block;
   } */
+  header ul {
+    background: #337ab750;
+  }
+  header a {
+    color: #ffffff;
+  }
   #menu {
     height: 100%;
     overflow-y: auto;
