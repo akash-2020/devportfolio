@@ -217,7 +217,7 @@ header a:focus {
 }
 .button-greeting-div {
   display: flex;
-  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .greeting-text {
@@ -303,7 +303,6 @@ header a:focus {
 .github i:hover,
 .gitlab i:hover,
 .google i:hover,
-.instagram i:hover,
 .linkedin i:hover,
 .twitter i:hover {
   background-color: #000;
@@ -577,7 +576,7 @@ header a:focus {
 /* ----------------------------------------- responsive -------------------------------------------- */
 /* Mobile first queries */
 /* Larger than mobile */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   /* #mobile-menu-open,
   #mobile-menu-close {
     display: block;
@@ -655,7 +654,82 @@ header a:focus {
   }
 }
 /* Larger than phablet */
-@media (min-width: 550px) {
+@media (min-width: 426px) and (max-width: 768px) {
+  /* #mobile-menu-open,
+  #mobile-menu-close {
+    display: block;
+  } */
+  header ul {
+    background: #337ab750;
+  }
+  header a {
+    color: #ffffff;
+  }
+  #menu {
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+  /* #menu li {
+    display: block;
+    margin-bottom: 10px;
+  } */
+  .my-name h1 {
+    font-size: 3em;
+  }
+  .my-name h2 {
+    font-size: 1.25em;
+  }
+  .btn-rounded-white {
+    padding: 10px 17px;
+  }
+  .greet-main {
+    width: 65%;
+  }
+  .greeting-text {
+    font-size: 2em;
+  }
+
+  .greeting-text-p {
+    font-size: 1.25em;
+  }
+  .software-skill-inline {
+    padding: 6px 10px;
+  }
+  .software-skill-inline > i {
+    font-size: 1em;
+  }
+  .whatIdo-text {
+    margin-top: 25px !important;
+  }
+  .greeting-main > * {
+    margin-bottom: 0px;
+  }
+  .repo-cards-div-main {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .repo-name {
+    font-size: 1.25em;
+  }
+  #opensource {
+    margin-bottom: 36px;
+  }
+  .project-title {
+    font-size: 2em;
+  }
+  .prof-title {
+    font-size: 2em;
+  }
+  #contact .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .subTitle,
+  .bio-text {
+    font-size: 1.25em;
+  }
 }
 /* Larger than tablet */
 @media (min-width: 750px) {
