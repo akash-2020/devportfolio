@@ -2,7 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  /* font-family: "Varela Round", sans-serif; */
   font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
@@ -111,7 +110,6 @@ header a:focus {
   position: relative;
   width: 100%;
   z-index: -10;
-  /* background-color: aliceblue; */
   background: linear-gradient(to top, #81c4e9 0%, #369fd3 100%);
 }
 .particles-js-canvas-el {
@@ -322,9 +320,7 @@ header a:focus {
 .google i {
   background-color: #ea4335;
 }
-/* .gitlab i {
-  background-color: #fca326;
-} */
+
 .instagram {
   margin-left: -6px;
 }
@@ -577,10 +573,6 @@ header a:focus {
 /* Mobile first queries */
 /* Larger than mobile */
 @media screen and (max-width: 425px) {
-  /* #mobile-menu-open,
-  #mobile-menu-close {
-    display: block;
-  } */
   header ul {
     background: #337ab750;
   }
@@ -594,10 +586,6 @@ header a:focus {
     border-radius: 0;
     width: 100%;
   }
-  /* #menu li {
-    display: block;
-    margin-bottom: 10px;
-  } */
   .my-name h1 {
     font-size: 2em;
   }
@@ -655,10 +643,6 @@ header a:focus {
 }
 /* Larger than phablet */
 @media (min-width: 426px) and (max-width: 768px) {
-  /* #mobile-menu-open,
-  #mobile-menu-close {
-    display: block;
-  } */
   header ul {
     background: #337ab750;
   }
@@ -672,10 +656,7 @@ header a:focus {
     border-radius: 0;
     width: 100%;
   }
-  /* #menu li {
-    display: block;
-    margin-bottom: 10px;
-  } */
+
   .my-name h1 {
     font-size: 3em;
   }
