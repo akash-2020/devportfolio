@@ -1,3 +1,7 @@
+function openProject() {
+  window.open("https://github.com/akash-2020/devportfolio", "_blank");
+}
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
